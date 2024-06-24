@@ -1,4 +1,3 @@
-//array ventas//
 const propiedades_venta = [
     {
         nombre: "Penthouse de lujo con terraza panorámica",
@@ -42,7 +41,6 @@ const propiedades_venta = [
     }
 ]
 
-//array alquiler//
 const propiedades_alquiler = [
     {
         nombre: "Apartamento en el centro de la ciudad",
@@ -86,7 +84,6 @@ const propiedades_alquiler = [
     }
 ]
 
-//js ventas//
 const principal_venta = document.querySelector("#principal")
 
 let html_ventas =""
@@ -116,9 +113,6 @@ for(let propiedad_venta of propiedades_venta){
 `
 }
 
-
-
-//js alquiler//
 const principal_alquiler = document.querySelector("#principal")
 
 let html_alquiler =""
@@ -148,14 +142,11 @@ for(let propiedad_alquiler of propiedades_alquiler){
 `
 }
 
-//js index//
-
 const alquiler_index = document.querySelector("#alquilerSeccion")
 const venta_index = document.querySelector("#ventaSeccion")
 const propiedades_alquiler_seleccionadas = propiedades_alquiler.slice(0,3)
 const propiedades_venta_seleccionadas = propiedades_venta.slice(0,3)
 
-//html index alquiler
 let html_alquiler_index =""
 
 for(let propiedad_alquiler of propiedades_alquiler_seleccionadas){
@@ -184,8 +175,6 @@ for(let propiedad_alquiler of propiedades_alquiler_seleccionadas){
 `
 }
 
-//html index venta//
-
 let html_ventas_index =""
 
 for(let propiedad_venta of propiedades_venta_seleccionadas){
@@ -213,7 +202,6 @@ for(let propiedad_venta of propiedades_venta_seleccionadas){
 `
 }
 
-//condicion para mostrar pagina//
 const venta = document.querySelector("#ventas")
 const alquiler = document.querySelector("#alquiler")
 
